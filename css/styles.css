@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 h1 {
 	margin: auto;
 	margin-bottom: 10px;
@@ -28,9 +32,20 @@ input {
 main {
 	display: grid;
 	height: 80vh;
-	grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-	grid-auto-rows: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
 	grid-gap: 20px;
 	grid-auto-flow: row;
+}
+
+div {
+	display: flex;
+	margin: auto;
+}
+
+img {
+	flex: 1;
+	margin: 20px;
+	margin-bottom: 0;
 }
 
