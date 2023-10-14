@@ -3,7 +3,7 @@ const images = document.querySelectorAll("a");
 
 
 searchInput.addEventListener("keyup", (event) => {
-  constsearchTerm = searchInput.value.toLowerCase();
+  const searchTerm = searchInput.value.toLowerCase();
   for (let i = 0; i < images.length; i++) {
     const image = images[i];
 
